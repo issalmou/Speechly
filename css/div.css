@@ -1,0 +1,83 @@
+body {
+    background-color: #121212;
+    color: #ccc;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.icon-select {
+    font-size: 2rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    color: #ccc;
+}
+
+.icon-select.active {
+    color: #0d6efd;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.input-section {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+.input-section.active {
+    display: block;
+}
+
+.custom-audio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.custom-audio button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 5px;
+    background-color: #555;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00ff99;
+    /* Vert clair */
+    width: 0%;
+    border-radius: 3px;
+}
+
+input[type="file"] {
+    background-color: #1a1a1a;
+    color: #ccc;
+    border: 1px solid #333;
+}
+
+#downloadLink {
+    display: none;
+    margin-top: 1rem;
+}
+
+#afterSubmit {
+    display: none;
+    margin-top: 2rem;
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 8px;
+}
