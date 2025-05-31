@@ -69,7 +69,6 @@
         .progress {
             height: 100%;
             background-color: #00ff99;
-            /* Vert clair */
             width: 0%;
             border-radius: 3px;
         }
@@ -97,9 +96,7 @@
 
         #afterSubmit {
             position: relative;
-            /* ✅ permet à .loader de se centrer par rapport à cette div */
             height: auto;
-            /* ou auto/100vh selon ton besoin */
         }
 
         .loader {
@@ -107,7 +104,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            /* ✅ centre parfaitement */
             display: flex;
             gap: 5px;
             font-size: 24px;
@@ -324,7 +320,7 @@
         }
     });
 
-    // Fonction pour extraire l'audio wav d'une vidéo côté client
+    // Extract audio from video
     async function extractAudioFromVideo(file) {
         return new Promise((resolve, reject) => {
             
@@ -359,7 +355,7 @@
         });
     }
 
-    // Gestion du formulaire d'envoi
+    // submit formulaire to api
     document.getElementById('audioForm').addEventListener('submit', async function (e) {
         e.preventDefault();
 
